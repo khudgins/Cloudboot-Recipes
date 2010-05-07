@@ -1,0 +1,30 @@
+NAME   = raw_template
+CPU    = 0.3
+MEMORY = 128
+
+# Source is a hack, this really needs to be fully templated out as an LWRP
+
+DISK   = [
+  source   = "<%= @node[:opennebula][:image_dir] %>/centos.5-4.x86-64.img",
+  target   = "sda1",
+  readonly = "no" ]
+
+NIC    = [ NETWORK = "<%= @node[:opennebula][:network][:name] %>" ]
+
+FEATURES=[ acpi="no" ]
+
+OS      =[
+    kernel = "/boot/<%= @node[:opennebula][:xen_domu_kernel] %>",
+    initrd = "/boot/<%= @node[:opennebula][:xen_domu_initrd] %>",
+    root = "sda1"
+]
+
+#CONTEXT = [
+#    hostname    = "$NAME",
+#    ip_public   = "PUBLIC_IP",
+#    files      = "/path/to/init.sh /path/to/id_dsa.pub",
+#    target      = "hdc",
+#    root_pubkey = "id_dsa.pub",
+#    username    = "opennebula",
+#    user_pubkey = "id_dsa.pub"
+#]

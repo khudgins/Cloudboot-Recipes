@@ -1,0 +1,53 @@
+= DESCRIPTION:
+
+Installs OpenNebula; has two parts: frontend and cluster node; deploys in OpenNebula "self-contained" mode by default. All configurable options are stored in the ~/attributes/opennebula.rb file. The cloud controller has been tested on Ubuntu 9.04, while Xen nodes run CentOS 5.4. 
+
+= REQUIREMENTS:
+
+== Platform and Application Environment:
+
+* ruby >= 1.8.5
+* sqlite3 >= 3.5.2
+* xmlrpc-c >= 1.06
+* openssl >= 0.9
+* ssh
+* ruby-dev
+* make
+* rubygems (or gem)
+* libxml2
+* libxslt (fedora flavor ???)
+* libxslt1 (debian flavor)
+
+=== gems & related
+
+* rake
+* libxml-parser-ruby1.8 OR expat + xmlparser gem
+* nokogiri
+
+=== Users & Groups
+
+* oneadmin:cloud
+
+=== Misc
+
+* Shared filesystem for running and 'cloning' VMs (!!?)
+
+== Cookbooks:
+
+* ruby
+* runit
+
+= ATTRIBUTES: 
+
+No attributes are used.
+
+= USAGE:
+
+NO EXAMPLE
+
+= LICENSE and AUTHOR:
+      
+Author:: Keith Hudgins (<keith@cloudscaling.com>)
+Copyright:: 2010, Cloudscaling
+
+Licensed under GCC

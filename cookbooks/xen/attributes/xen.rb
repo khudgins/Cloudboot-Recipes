@@ -1,0 +1,1 @@
+set[:xen][:bridge_if] = "eth0"

@@ -1,0 +1,8 @@
+NAME = "<%= @node[:opennebula][:network][:name] %>"
+TYPE = FIXED
+
+#Now we'll use the cluster private network (physical)
+BRIDGE = <%= @node[:opennebula][:network][:bridge] %>
+<% @ip_addresses.each do |addr| %>
+LEASES = [ IP="<%= addr %>"]
+<% end %>

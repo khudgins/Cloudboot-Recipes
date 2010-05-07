@@ -1,0 +1,6 @@
+CPU      = 1
+MEMORY   = 128
+OS       = [kernel="/path-to-kernel",initrd= "/path-to-initrd",root="sda1" ]
+DISK     = [source="/path-to-image-file",target="sda",readonly="no"]
+NIC      = [mac="xx.xx.xx.xx.xx.xx", bridg="eth0"]
+GRAPHICS = [type="vnc",listen="127.0.0.1",port="5900"]

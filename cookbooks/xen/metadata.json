@@ -1,0 +1,38 @@
+{
+  "recipes": {
+    "xen": ""
+  },
+  "dependencies": {
+
+  },
+  "maintainer": "cloudscaling.om",
+  "recommendations": {
+
+  },
+  "description": "Installs/Configures xen",
+  "platforms": {
+
+  },
+  "maintainer_email": "khudgins@cloudscaling.com",
+  "version": "0.1.0",
+  "suggestions": {
+
+  },
+  "name": "xen",
+  "conflicting": {
+
+  },
+  "attributes": {
+
+  },
+  "providing": {
+    "xen": [
+
+    ]
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "license": "Apache 2.0",
+  "replacing": {
+
+  }
+}
