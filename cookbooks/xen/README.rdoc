@@ -1,8 +1,22 @@
 = DESCRIPTION:
 
+Installs Xen repositories from the Gitco.de repo on RHEL-based platforms.
+
 = REQUIREMENTS:
+
+RHEL 5.x-based OS (Tested on CentOS 5.4)
 
 = ATTRIBUTES: 
 
+  Check the xen.rb file under attributes. Currently, you only need to define your bridge interface
+
 = USAGE:
+
+= LICENSE and AUTHOR:
+      
+Author:: Keith Hudgins (<keith@cloudscaling.com>)
+Copyright:: 2010, Cloudscaling
+
+Licensed under Apache 2.0
+http://www.apache.org/licenses/LICENSE-2.0
 

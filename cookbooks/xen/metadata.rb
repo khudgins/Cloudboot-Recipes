@@ -1,4 +1,4 @@
-maintainer       "cloudscaling.om"
+maintainer       "cloudscaling.com"
 maintainer_email "khudgins@cloudscaling.com"
 license          "Apache 2.0"
 description      "Installs/Configures xen"

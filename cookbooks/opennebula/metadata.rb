@@ -1,7 +1,7 @@
-maintainer        "neoTactics, Inc DBA Cloudscaling"
+maintainer        "Cloudscaling"
 maintainer_email  "support@cloudscaling.com"
-license           "Drone (Blank) Role"
-description       "Installs and configures minimal set of common configurations for a basic server"
+license           "Apache 2.0 http://www.apache.org/licenses/LICENSE-2.0"
+description       "Installs OpenNebula"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version           "0.1"
 

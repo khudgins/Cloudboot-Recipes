@@ -8,13 +8,12 @@
 # Create ONE installdir
 
 
-[ node[:opennebula][:top_dir] ].each do |cloud_dir|
-  directory cloud_dir do
-    #owner         node[:opennebula][:user][:name]
-    #group         node[:opennebula][:user][:primary_group]
-    not_if        "test -d #{cloud_dir}"
-  end
+directory node[:opennebula][:top_dir] do
+  #owner         node[:opennebula][:user][:name]
+  #group         node[:opennebula][:user][:primary_group]
+  not_if        "test -d #{node[:opennebula][:top_dir]}"
 end
+
 
 group node[:opennebula][:global][:group][:name] do
   gid           node[:opennebula][:global][:group][:id]

@@ -30,7 +30,7 @@
 
     ]
   },
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "long_description": "= DESCRIPTION: Installs Xen repositories from the Gitco.de repo on RHEL-based platforms.\n\n= REQUIREMENTS: RHEL 5.x-based OS (Tested on CentOS 5.4)\n\n= ATTRIBUTES: Check the xen.rb file under attributes. Currently, you only need to define your bridge interface\n\n= USAGE:\n\n",
   "license": "Apache 2.0",
   "replacing": {
 

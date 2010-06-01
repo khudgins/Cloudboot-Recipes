@@ -6,7 +6,7 @@ Installs OpenNebula; has two parts: frontend and cluster node; deploys in OpenNe
 
 == Platform and Application Environment:
 
-* ruby >= 1.8.5
+* ruby >= 1.8.6
 * sqlite3 >= 3.5.2
 * xmlrpc-c >= 1.06
 * openssl >= 0.9
@@ -50,4 +50,5 @@ NO EXAMPLE
 Author:: Keith Hudgins (<keith@cloudscaling.com>)
 Copyright:: 2010, Cloudscaling
 
-Licensed under GCC
+Licensed under Apache 2.0
+http://www.apache.org/licenses/LICENSE-2.0

@@ -2,7 +2,7 @@
 # Cookbook Name:: xen
 # Recipe:: default
 #
-# Copyright 2009, cloudscaling.com
+# Copyright 2010, cloudscaling.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,16 +17,14 @@
 # limitations under the License.
 #
 
-
-#### NOTICE!!
-## At this point, the scripts do NOT set the default kernel to
-## a xen build. The centos/redhat install requires you to
-## set the default kernel in /etc/grub.conf
+## Notice!
+# This recipe does NOT reboot the node post-application.
+# In order to run Xen, you must reboot once this recipe runs
+# the first time. 
 
 case node[:platform]
 when "centos", "redhat", "fedora"
-  # Using the gitco repo for xen 3.4.1
-  # First, we set up the repo
+  # Using the gitco repo for xen 3.4.2
   remote_file "/etc/yum.repos.d/gitco.repo" do
     source "http://www.gitco.de/linux/x86_64/centos/5/CentOS-GITCO.repo"
     mode "0644"
@@ -41,7 +39,7 @@ when "centos", "redhat", "fedora"
   end
   ### HACK WARNING!!!
   ## If Gitco updates their kernel version, this WILL cause the subsequent reboot
-  ## to hose your system!!! The kernel in the grub.conf 
+  ## to hose your system!!! 
   template "/etc/grub.conf" do
     mode "0644"
     source "grub.conf.erb"

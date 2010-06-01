@@ -47,8 +47,8 @@
 
     ]
   },
-  "long_description": "= DESCRIPTION:\n\nInstalls OpenNebula; has two parts: frontend and cluster node; deploys in OpenNebula \"self-contained\" mode by default\n\n= REQUIREMENTS:\n\n== Platform and Application Environment:\n\n* ruby >= 1.8.5\n* sqlite3 >= 3.5.2\n* xmlrpc-c >= 1.06\n* openssl >= 0.9\n* ssh\n* ruby-dev\n* make\n* rubygems (or gem)\n* libxml2\n* libxslt (fedora flavor ???)\n* libxslt1 (debian flavor)\n\n=== gems & related\n\n* rake\n* libxml-parser-ruby1.8 OR expat + xmlparser gem\n* nokogiri\n\n=== Users & Groups\n\n* oneadmin:cloud\n\n=== Misc\n\n* Shared filesystem for running and 'cloning' VMs (!!?)\n\n== Cookbooks:\n\n* ruby\n* runit\n\n= ATTRIBUTES: \n\nNo attributes are used.\n\n= USAGE:\n\nNO EXAMPLE\n\n= LICENSE and AUTHOR:\n      \nAuthor:: Randy Bias (<randyb@cloudscaling.com>)\nCopyright:: 2009, neoTactics, Inc & Cloudscaling\n\nLicensed under a PROPRIETARY LICENSE; NOT for sale or resale; all rights reserved\n",
-  "license": "Drone (Blank) Role",
+  "long_description": "= DESCRIPTION:\n\nInstalls OpenNebula; has two parts: frontend and cluster node; deploys in OpenNebula \"self-contained\" mode by default\n\n= REQUIREMENTS:\n\n== Platform and Application Environment:\n\n* ruby >= 1.8.6\n* sqlite3 >= 3.5.2\n* xmlrpc-c >= 1.06\n* openssl >= 0.9\n* ssh\n* ruby-dev\n* make\n* rubygems (or gem)\n* libxml2\n* libxslt (fedora flavor ???)\n* libxslt1 (debian flavor)\n\n=== gems & related\n\n* rake\n* libxml-parser-ruby1.8 OR expat + xmlparser gem\n* nokogiri\n\n=== Users & Groups\n\n* oneadmin:cloud\n\n=== Misc\n\n* Shared filesystem for running and 'cloning' VMs (!!?)\n\n== Cookbooks:\n\n* ruby\n* runit\n\n= ATTRIBUTES: \n\nConfigs are all in attributes at the moment.\n\n= USAGE:\n\nNO EXAMPLE\n\n= LICENSE and AUTHOR:\n      \nAuthor:: Keith Hudgins (<keith@cloudscaling.com>)\nCopyright:: 2010, Cloudscaling\n\nLicensed under Apache 2.0 License http://www.apache.org/licenses/LICENSE-2.0\n",
+  "license": "Apache 2.0 http://www.apache.org/licenses/LICENSE-2.0",
   "replacing": {
 
   }
