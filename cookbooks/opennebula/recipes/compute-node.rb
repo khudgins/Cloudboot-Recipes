@@ -45,7 +45,7 @@ mount node[:opennebula][:top_dir] do
   device "#{node[:opennebula][:controller][:ip_address]}:#{node[:opennebula][:top_dir]}"
 end
 
-# Drop the kernel and initrd in /boot:
+# Drop the xen vm kernel and initrd in /boot:
 remote_file "/boot/#{node[:opennebula][:xen_domu_kernel]}" do
   source "#{node[:opennebula][:localserver]}/#{node[:opennebula][:xen_domu_kernel]}"
   mode "0644"

@@ -10,7 +10,7 @@ set[:opennebula][:flag][:shared_filesystem]      = true
 ##
 set[:opennebula][:source]        = "http://dev.opennebula.org/attachments/download/103/one-1.4.0.tar.gz"
 ## A local http server where large files are located.
-set[:opennebula][:localserver]   = "http://10.250.250.42"
+set[:opennebula][:localserver]   = "http://cloudboot.com/downloads"
 
 ##
 ## Kernel and initrd, should be stored on node[:opennebula][:localserver]

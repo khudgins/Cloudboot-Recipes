@@ -95,7 +95,7 @@ end
 service "nfs-kernel-server" do
   supports :restart => true
   action :start
-  subscribes :restart, resources("remote_file[/etc/exports]")
+  subscribes :restart, resources(:template => "/etc/exports")
 end
 
 
